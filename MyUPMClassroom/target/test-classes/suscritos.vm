@@ -1,0 +1,14 @@
+
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<form action="/" method="get">
+<h1>Lista de suscritos de aula $id:</h1>
+<hr>
+#foreach ($observador in $observadores)
+<h4> Datos del suscrito $observador </h4>
+<hr>
+#end
+<class="button">
+    <button type="submit">menu principal</button>
+</body>

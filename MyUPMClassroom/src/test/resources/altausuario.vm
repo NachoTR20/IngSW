@@ -1,0 +1,17 @@
+<html>
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+
+  <center><h3> Dar de alta alumno<a href="http://localhost:4567/newalumno">  Elegir</a></h3></center>
+
+  <center><h3> Dar de alta PDI<a href="http://localhost:4567/newpdi">  Elegir</a></h3></center>
+
+  <center><h3> Dar de alta PAS <a href="http://localhost:4567/newpas">  Elegir</a></h3></center>
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>
+</html>

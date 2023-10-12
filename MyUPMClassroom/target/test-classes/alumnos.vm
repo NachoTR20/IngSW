@@ -1,0 +1,17 @@
+
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<h1>Lista de usuarios:</h1>
+<hr>
+
+#foreach ($usuario in $usuarios)
+<h4>  Nombre: ${usuario.nombre}, DNI: ${usuario.dni}<a href="http://localhost:4567/alumno?dni=$usuario.dni"> VER</a>
+<hr>
+#end
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>

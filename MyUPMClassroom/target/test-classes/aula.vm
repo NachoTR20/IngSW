@@ -1,0 +1,31 @@
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<h1> Nombre aula: $nombreAula  </h1>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Superficie</th>
+    <th>Aforo</th>
+    <th>Tipo</th>
+  </tr>
+  <tr>
+    <td>$id</td>
+    <td>$superficie</td>
+    <td>$aforo</td>
+    <td>$tipo</td>
+  </tr>
+</table>
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>

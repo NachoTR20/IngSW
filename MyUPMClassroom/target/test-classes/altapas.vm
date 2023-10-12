@@ -1,0 +1,47 @@
+<html>
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<form action="/guardarpas" method="post">
+<h1> Dar de alta PAS</h1>
+<ul>
+  <li>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+  </li>
+  <li>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apelidos" name="apellidos">
+  </li>
+ <li>
+      <label for="correo">Correo:</label>
+      <input type="text" id="correo" name="correo">
+  </li>
+   <li>
+        <label for="contrasenya">Contrasenya :</label>
+        <input type="text" id="contrasenya" name="contrasenya">
+    </li>
+     <li>
+          <label for="dni">DNI :</label>
+          <input type="text" id="dni" name="dni">
+      </li>
+       <li>
+            <label for="codigopersonal">Codigo personal:</label>
+            <input type="text" id="codigopersonal" name="codigopersonal">
+        </li>
+        <li>
+             <label for="anio">Año de incorporacion:</label>
+             <input type="text" id="anio" name="anio">
+        </li>
+  <li class="button">
+    <button type="submit">Dar de alta</button>
+  </li>
+ </ul>
+</form>
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>
+</html>

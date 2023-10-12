@@ -1,0 +1,10 @@
+<html>
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<h1> Usuario suscrito </h1>
+<form method="get" action="/">
+    <button type="submit">Volver al menu</button>
+</form>
+</body>
+</html>

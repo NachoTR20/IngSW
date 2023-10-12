@@ -1,0 +1,18 @@
+
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<h1>Lista de usuarios:</h1>
+<hr>
+
+#foreach ($observador in $observadores)
+<h4>  Nombre: ${observador.nombre}, DNI: ${observador.dni}
+<a href="http://localhost:4567/suscribirPdi?dni=$observador.dni"> Suscribirse </a></h4>
+<hr>
+#end
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>

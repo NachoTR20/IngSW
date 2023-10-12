@@ -1,0 +1,17 @@
+
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<form action="/guardarobservador" method="post">
+<h1>Lista de aulas:</h1>
+<hr>
+#foreach ($aula in $aulas)
+<h4>Titulo: ${aula.nombreAula}, ${aula.id} <a href="http://localhost:4567/guardarsuscritoalumno?id=$aula.id">Suscribirse</a></h4>
+<hr>
+#end
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>

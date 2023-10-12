@@ -1,0 +1,42 @@
+<html>
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<form action="/guardaraulas" method="post">
+<ul>
+  <li>
+    <label for="nombreaula">Nombre Aula:</label>
+    <input type="text" id="nombreaula" name="nombreaula">
+  </li>
+  <li>
+    <label for="id">Id aula:</label>
+    <input type="text" id="id" name="id">
+  </li>
+  <li>
+    <label for="superficie">superficie:</label>
+        <input type="text" id="superficie" name="superficie">
+  </li>
+  <li>
+    <label for="aforo">aforo:</label>
+          <input type="text" id="aforo" name="aforo">
+ </li>
+  <li>
+  <label> tipoAula</label>
+        <select name="tipoAula">
+            <option value="TEORIA"> teoria</option>
+            <option value="LABORATORIO" selected>laboratorio</option>
+            <option value="MIXTA">mixta</option>
+          </select>
+      </li>
+  <li class="button">
+    <button type="submit">Enviar</button>
+  </li>
+ </ul>
+</form>
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>
+</html>

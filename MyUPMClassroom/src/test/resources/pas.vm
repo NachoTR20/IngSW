@@ -1,0 +1,34 @@
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+<h2>Este usuario es un PAS llamado: $nombre $apellidos</h2>
+<h3>con los datos: </h3>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<table>
+  <tr>
+    <th>Correo</th>
+    <th>DNI</th>
+    <th>Codigo personal</th>
+    <th>año de incorporacion </th>
+    <th>Contraseña</th>
+  </tr>
+  <tr>
+    <td>$correo</td>
+    <td>$dni</td>
+    <td>$codigopersonal</td>
+    <td>$anio</td>
+    <td>$contrasenya</td>
+  </tr>
+</table>
+<form action="/" method="get">
+<p align="right">
+<class="button">
+    <button type="submit">Volver menu</button>
+</p>
+</body>

@@ -1,0 +1,20 @@
+<html>
+<title> MyUPMClasroom</title>
+<body bgcolor="#ABF5F4">
+<center><h1> MY_UPMClasroom </h1> </center>
+
+<center><h1> <a href="http://localhost:4567/listaraulas"> ver lista aulas</a></h1></center>
+
+<center><h1> <a href="http://localhost:4567/listaralumnos"> ver lista de alumnos</a></h1></center>
+<center><h1> <a href="http://localhost:4567/listarpdis"> ver lista pdi</a></h1></center>
+<center><h1> <a href="http://localhost:4567/listarpas"> ver lista pas</a></h1></center>
+
+<center><h1> <a href="http://localhost:4567/newaula"> crear aula</a></h1></center>
+
+<center><h1> <a href="http://localhost:4567/newusuario">Dar de alta usuario</a></h1></center>
+
+<center><h1> <a href="http://localhost:4567/elegirobservador">Suscribir observador</a></h1></center>
+
+
+</body>
+</html>
