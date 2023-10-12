@@ -1,0 +1,466 @@
+CREATE SCHEMA ExpressCorreos
+DEFAULT CHARACTER SET utf8
+COLLATE utf8_spanish2_ci;
+USE ExpressCorreos;
+
+CREATE TABLE Provincia
+(
+  Nombre VARCHAR(250) NOT NULL,
+  CodP INT NOT NULL,
+  PRIMARY KEY (CodP)
+);
+
+CREATE TABLE Centro_Clasificacion
+(
+  CodCC INT NOT NULL,
+  Nombre VARCHAR (250)NOT NULL,
+  MaxC INT NOT NULL,
+  MaxP INT NOT NULL,
+  PRIMARY KEY (CodCC)
+);
+
+CREATE TABLE Turno
+(
+  Tipo VARCHAR (250)NOT NULL,
+  Horario VARCHAR (250)NOT NULL,
+  PRIMARY KEY (Tipo, Horario)
+);
+
+CREATE TABLE Cartero
+(
+  Nombre VARCHAR (250)NOT NULL,
+  Apellido VARCHAR (250)NOT NULL,
+  DNI VARCHAR (250)NOT NULL,
+  PRIMARY KEY (DNI)
+);
+
+CREATE TABLE Rutas
+(
+  CodRuta INT NOT NULL,
+  PRIMARY KEY (CodRuta)
+);
+
+CREATE TABLE Municipio
+(
+  NombreM VARCHAR (250)NOT NULL,
+  CodP INT NOT NULL,
+  PRIMARY KEY (NombreM),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodP) REFERENCES Provincia(CodP)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Calle_Municipio
+(
+  NombreC VARCHAR (250)NOT NULL,
+  NombreM VARCHAR (250)NOT NULL,
+  PRIMARY KEY (NombreC,NombreM),
+  
+  CONSTRAINT 
+  FOREIGN KEY (NombreM) REFERENCES Municipio(NombreM)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Direccion
+(
+  Id INT NOT NULL,
+  Piso INT NOT NULL,
+  Puerta INT NOT NULL,
+  Numero INT NOT NULL,
+  Portal INT NOT NULL,
+  NombreC VARCHAR (250)NOT NULL,
+  NombreM VARCHAR (250)NOT NULL,
+  PRIMARY KEY (Id),
+  
+  CONSTRAINT
+  FOREIGN KEY (NombreC, NombreM) REFERENCES Calle_Municipio(NombreC, NombreM)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Usuario  
+(
+  CodU INT NOT NULL,
+  Nombre VARCHAR (250)NOT NULL,
+  Apellidos VARCHAR (250)NOT NULL,
+  id_direccion int not null,
+  PRIMARY KEY (CodU), 
+  
+  CONSTRAINT
+  FOREIGN KEY (id_direccion) REFERENCES Direccion(Id)
+  
+);
+CREATE TABLE Usuario_Real
+(
+  DNI VARCHAR (250)NOT NULL,
+  Correo_electronico VARCHAR (250)NOT NULL,
+  CodU INT NOT NULL,
+  DNI_autoriza VARCHAR (250) NULL,
+  PRIMARY KEY (DNI),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodU) REFERENCES Usuario(CodU)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_autoriza) REFERENCES Usuario_Real(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Recogida_paquete
+(
+  CodRecogida INT NOT NULL,
+  Fecha DATE NOT NULL,
+  DNI_usuarioReal VARCHAR (250)NOT NULL,
+  DNI_cartero VARCHAR (250)NOT NULL,
+  ID_direccion INT NOT NULL,
+  PRIMARY KEY (CodRecogida),
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_usuarioReal) REFERENCES Usuario_Real(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_cartero) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (ID_direccion) REFERENCES Direccion(Id)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE pertenece
+(
+  CodCC INT NOT NULL,
+  NombreM VARCHAR (250)NOT NULL,
+  primary key (CodCC,NombreM),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodCC) REFERENCES Centro_Clasificacion(CodCC)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (NombreM) REFERENCES Municipio(NombreM)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Oficina
+(
+  CodO varchar(250) NOT NULL,
+  NombreM VARCHAR (250)NOT NULL,
+  PRIMARY KEY (CodO),
+  
+  CONSTRAINT
+  FOREIGN KEY (NombreM) REFERENCES Municipio(NombreM)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Coche
+(
+  Matricula VARCHAR (250)NOT NULL,
+  Capacidad INT NOT NULL,
+  CodO VARCHAR (250) NOT NULL,
+  PRIMARY KEY (Matricula),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodO) REFERENCES Oficina(CodO)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE trabaja
+(
+  Fecha DATE NOT NULL,
+  Tipo VARCHAR (250)NOT NULL,
+  Horario VARCHAR (250)NOT NULL,
+  CodO varchar(250) NOT NULL,
+  DNI VARCHAR (250)NOT NULL,
+  primary key (Fecha, Tipo, Horario, CodO, DNI),
+  
+  CONSTRAINT
+  FOREIGN KEY (Tipo, Horario) REFERENCES Turno(Tipo, Horario)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodO) REFERENCES Oficina(CodO)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Reparto
+(
+  CodRep INT NOT NULL,
+  Fecha DATE NOT NULL,
+  DNI VARCHAR (250) NULL,
+  CodRuta INT NOT NULL,
+  Matricula VARCHAR (250)NOT NULL,
+  PRIMARY KEY (CodRep),
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodRuta) REFERENCES Rutas(CodRuta)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (Matricula) REFERENCES Coche(Matricula)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+
+CREATE TABLE Paquete
+(
+  Id varchar(250) NOT NULL,
+  Dimension VARCHAR(250) NOT NULL,
+  Peso INT NOT NULL,
+  CodRep INT NOT NULL,
+  Comentario VARCHAR (250)NOT NULL,
+  Hora VARCHAR (250)NOT NULL,
+  Fecha DATE NOT NULL,
+  DNI_cartero VARCHAR (250) NULL,
+  CodU_envia INT NOT NULL,
+  CodU_recibe INT NOT NULL,
+  CodRecogida INT NULL,
+  PRIMARY KEY (Id),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodRep) REFERENCES Reparto(CodRep)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_cartero) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodU_envia) REFERENCES Usuario(CodU)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodU_recibe) REFERENCES Usuario(CodU)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodRecogida) REFERENCES Recogida_paquete(CodRecogida)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Carta
+(
+  Formato VARCHAR (250)NOT NULL,
+  Id INT NOT NULL,
+  Fecha DATE NOT NULL,
+  Hora varchar(250) NOT NULL,
+  DNI_cartero VARCHAR (250) NULL,
+  CodRep INT NOT NULL,
+  CodU_envia INT NOT NULL,
+  CodU_recibe INT NOT NULL,
+  PRIMARY KEY (Id),
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_cartero) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodRep) REFERENCES Reparto(CodRep)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodU_envia) REFERENCES Usuario(CodU)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodU_recibe) REFERENCES Usuario(CodU)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE contacto
+(
+  CodCC INT NOT NULL,
+  CodO varchar(250) NOT NULL,
+  primary key (CodCC,CodO),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodCC) REFERENCES Centro_Clasificacion(CodCC)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodO) REFERENCES Oficina(CodO)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+
+CREATE TABLE Area_Envio  #CodA cambiarlo de tipo INT a varchar250 para ponerle el nombre AR-MAD-O3?
+(
+  CodA varchar(250) NOT NULL,
+  CodA_contenida varchar(250) NULL,
+  CodO varchar(250) NOT NULL, 
+  PRIMARY KEY (CodA),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodA_contenida) REFERENCES Area_Envio(CodA)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodO) REFERENCES Oficina(CodO)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Asigna
+(
+  DNI VARCHAR (250)NOT NULL,
+  CodA VARCHAR(250) NOT NULL,
+  primary key (DNI, CodA),
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodA) REFERENCES Area_Envio(CodA)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE Segmento
+(
+  CodS INT NOT NULL,
+  Inicio int NOT NULL,
+  Fin int NOT NULL,
+  NombreC VARCHAR (250)NOT NULL,
+  NombreM VARCHAR (250)NOT NULL,
+  CodA varchar(250) NOT NULL,
+  PRIMARY KEY (CodS),
+  
+  CONSTRAINT
+  FOREIGN KEY (NombreC, NombreM) REFERENCES Calle_Municipio(NombreC,NombreM)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodA) REFERENCES Area_Envio(CodA)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+CREATE TABLE ruta_tiene_segmento
+(
+  Orden INT NOT NULL,
+  CodS INT NOT NULL,
+  CodRuta INT NOT NULL,
+  primary key (CodS,CodRuta),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodS) REFERENCES Segmento(CodS)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (CodRuta) REFERENCES Rutas(CodRuta)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+
+CREATE TABLE Carta_Certificada
+(
+  Urgencia VARCHAR (250)NOT NULL,
+  Id INT NOT NULL,
+  Fecha DATE NOT NULL,
+  Hora varchar(250) NOT NULL,
+  CodR INT NOT NULL,
+  DNI_cartero VARCHAR (250) NULL,
+  DNI_usuarioRealEnvia VARCHAR (250)NOT NULL,
+  DNI_usuarioRealRecibe VARCHAR (250)NOT NULL,
+  PRIMARY KEY (Id),
+  
+  CONSTRAINT
+  FOREIGN KEY (CodR) REFERENCES Reparto(CodRep)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_cartero) REFERENCES Cartero(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_usuarioRealEnvia) REFERENCES Usuario_Real(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE,
+  
+  CONSTRAINT
+  FOREIGN KEY (DNI_usuarioRealRecibe) REFERENCES Usuario_Real(DNI)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE
+);
+
+
+CREATE TABLE usuario_tiene_direccion
+(
+	CodU INT NOT NULL,
+    ID_direccion INT NOT NULL,
+    primary key(CodU,ID_direccion),
+    
+    CONSTRAINT
+    FOREIGN KEY (CodU) REFERENCES Usuario(CodU)
+    ON DELETE NO ACTION
+	ON UPDATE CASCADE,
+    
+    CONSTRAINT
+	FOREIGN KEY (ID_direccion) REFERENCES Direccion(Id)
+    ON DELETE NO ACTION
+	ON UPDATE CASCADE
+);
+
+#POSIBLE MEJORA .v2
+/*
+CREATE TABLE Usuario  #reemplazar la tabla Usuario por esto, si utilizamos la version 2 del modelo añadiendo una relacion de usa entre usuario normal y direccion en relacion usuario N:1 direccion
+(
+  CodU INT NOT NULL,
+  Nombre VARCHAR (250)NOT NULL,
+  Apellidos VARCHAR (250)NOT NULL,
+  id_direccion int not null,
+  PRIMARY KEY (CodU), 
+  
+  CONSTRAINT
+  FOREIGN KEY (id_direccion) REFERENCES Direccion(Id)
+  
+);
+*/
+
