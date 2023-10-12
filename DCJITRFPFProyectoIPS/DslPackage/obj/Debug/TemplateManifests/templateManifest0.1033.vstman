@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\DCJITRFPFProyectoIPS</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{bdf7aa06-0612-4cb3-b2d9-3d855ec0e8e7}</TemplateID>
+        <Name Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="103" />
+        <Description Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="102" />
+        <Icon Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>DCJITRFPFProyectoIPS.DCJITRFPF_DSLProyectoIPS</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\DCJITRFPFProyectoIPS</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{f864f977-ae52-4f9a-aee4-d11d47ba7b62}</TemplateID>
+        <Name Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="103" />
+        <Description Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="102" />
+        <Icon Package="{5b9ef4f6-fde6-43d2-842c-f7a9f9572976}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>DCJITRFPFProyectoIPS.DCJITRFPF_DSLProyectoIPS</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

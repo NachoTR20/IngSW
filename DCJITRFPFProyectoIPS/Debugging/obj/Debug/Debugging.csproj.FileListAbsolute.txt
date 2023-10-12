@@ -1,0 +1,12 @@
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\bin\Debug\Debugging.dll
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\bin\Debug\Debugging.pdb
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.csproj.AssemblyReference.cache
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.dll
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.pdb
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\bin\Debug\Debugging.dll
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\bin\Debug\Debugging.pdb
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.csproj.AssemblyReference.cache
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.dll
+C:\Users\fdela\OneDrive - Universidad Politécnica de Madrid\Escritorio\PrácticaIPS\MDD2\Proyectos DSL\DCJITRFPFProyectoIPS\Debugging\obj\Debug\Debugging.pdb

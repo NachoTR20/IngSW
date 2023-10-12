@@ -1,0 +1,1451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPSDomainModel.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPS</value>
+    <comment>Description for DslLibrary &apos;DCJITRFPFProyectoIPS&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPSDomainModel.DisplayName" xml:space="preserve">
+    <value>DCJITRFPFProyectoIPS</value>
+    <comment>DisplayName for DslLibrary &apos;DCJITRFPFProyectoIPS&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizER.Description" xml:space="preserve">
+    <value>The root in which all other elements are embedded. Appears as a diagram.</value>
+    <comment>Description for DomainClass &apos;TapizER&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainClass &apos;TapizER&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizER/solucionER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizER.Solucion ER</value>
+    <comment>Description for DomainProperty &apos;solucionER&apos; on DomainClass &apos;TapizER&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizER/solucionER.DisplayName" xml:space="preserve">
+    <value>Solucion ER</value>
+    <comment>DisplayName for DomainProperty &apos;solucionER&apos; on DomainClass &apos;TapizER&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Entidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Entidad</value>
+    <comment>Description for DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Entidad/Nombre.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Entidad.Nombre</value>
+    <comment>Description for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Entidad/Nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Entidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Atributo</value>
+    <comment>Description for DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/Nombre.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Atributo.Nombre</value>
+    <comment>Description for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/Nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/tipoDato.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Atributo.Tipo Dato</value>
+    <comment>Description for DomainProperty &apos;tipoDato&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/tipoDato.DisplayName" xml:space="preserve">
+    <value>Tipo Dato</value>
+    <comment>DisplayName for DomainProperty &apos;tipoDato&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/longitud.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Atributo.Longitud</value>
+    <comment>Description for DomainProperty &apos;longitud&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Atributo/longitud.DisplayName" xml:space="preserve">
+    <value>Longitud</value>
+    <comment>DisplayName for DomainProperty &apos;longitud&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.AtributoNM</value>
+    <comment>Description for DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM.DisplayName" xml:space="preserve">
+    <value>Atributo NM</value>
+    <comment>DisplayName for DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM/AdmiteRepetidos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoNM.Admite Repetidos</value>
+    <comment>Description for DomainProperty &apos;AdmiteRepetidos&apos; on DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM/AdmiteRepetidos.DisplayName" xml:space="preserve">
+    <value>Admite Repetidos</value>
+    <comment>DisplayName for DomainProperty &apos;AdmiteRepetidos&apos; on DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM/AdmiteNoNulos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoNM.Admite No Nulos</value>
+    <comment>Description for DomainProperty &apos;AdmiteNoNulos&apos; on DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoNM/AdmiteNoNulos.DisplayName" xml:space="preserve">
+    <value>Admite No Nulos</value>
+    <comment>DisplayName for DomainProperty &apos;AdmiteNoNulos&apos; on DomainClass &apos;AtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.ClavePrimaria.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.ClavePrimaria</value>
+    <comment>Description for DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.ClavePrimaria.DisplayName" xml:space="preserve">
+    <value>Clave Primaria</value>
+    <comment>DisplayName for DomainClass &apos;ClavePrimaria&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Relacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Relacion</value>
+    <comment>Description for DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Relacion/nombre.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.Relacion.Nombre</value>
+    <comment>Description for DomainProperty &apos;nombre&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Relacion/nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;nombre&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb</value>
+    <comment>Description for DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.DisplayName" xml:space="preserve">
+    <value>Estilo Portal Web</value>
+    <comment>DisplayName for DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/Estilos.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Estilos</value>
+    <comment>Description for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/Estilos.DisplayName" xml:space="preserve">
+    <value>Estilos</value>
+    <comment>DisplayName for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/Titulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Titulo</value>
+    <comment>Description for DomainProperty &apos;Titulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/Titulo.DisplayName" xml:space="preserve">
+    <value>Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;Titulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/ColorTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Color Titulo</value>
+    <comment>Description for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/ColorTitulo.DisplayName" xml:space="preserve">
+    <value>Color Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/ColorFondo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Color Fondo</value>
+    <comment>Description for DomainProperty &apos;ColorFondo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/ColorFondo.DisplayName" xml:space="preserve">
+    <value>Color Fondo</value>
+    <comment>DisplayName for DomainProperty &apos;ColorFondo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/TamañoTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Tamaño Titulo</value>
+    <comment>Description for DomainProperty &apos;TamañoTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/TamañoTitulo.DisplayName" xml:space="preserve">
+    <value>Tamaño Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;TamañoTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/AlineacionTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Alineacion Titulo</value>
+    <comment>Description for DomainProperty &apos;AlineacionTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/AlineacionTitulo.DisplayName" xml:space="preserve">
+    <value>Alineacion Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;AlineacionTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/TipoLetraTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb.Tipo Letra Titulo</value>
+    <comment>Description for DomainProperty &apos;TipoLetraTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPortalWeb/TipoLetraTitulo.DisplayName" xml:space="preserve">
+    <value>Tipo Letra Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;TipoLetraTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb</value>
+    <comment>Description for DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
+    <comment>DisplayName for DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/Estilos.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Estilos</value>
+    <comment>Description for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/Estilos.DisplayName" xml:space="preserve">
+    <value>Estilos</value>
+    <comment>DisplayName for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/ColorTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Color Titulo</value>
+    <comment>Description for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/ColorTitulo.DisplayName" xml:space="preserve">
+    <value>Color Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/TamañoTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Tamaño Titulo</value>
+    <comment>Description for DomainProperty &apos;TamañoTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/TamañoTitulo.DisplayName" xml:space="preserve">
+    <value>Tamaño Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;TamañoTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/AlineacionTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Alineacion Titulo</value>
+    <comment>Description for DomainProperty &apos;AlineacionTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/AlineacionTitulo.DisplayName" xml:space="preserve">
+    <value>Alineacion Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;AlineacionTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/TipoLetraTitulo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb.Tipo Letra Titulo</value>
+    <comment>Description for DomainProperty &apos;TipoLetraTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloPaginaWeb/TipoLetraTitulo.DisplayName" xml:space="preserve">
+    <value>Tipo Letra Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;TipoLetraTitulo&apos; on DomainClass &apos;EstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario</value>
+    <comment>Description for DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario.DisplayName" xml:space="preserve">
+    <value>Estilo Formulario</value>
+    <comment>DisplayName for DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/Estilos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Estilos</value>
+    <comment>Description for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/Estilos.DisplayName" xml:space="preserve">
+    <value>Estilos</value>
+    <comment>DisplayName for DomainProperty &apos;Estilos&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/ColorFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Color Formulario</value>
+    <comment>Description for DomainProperty &apos;ColorFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/ColorFormulario.DisplayName" xml:space="preserve">
+    <value>Color Formulario</value>
+    <comment>DisplayName for DomainProperty &apos;ColorFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TamañoFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Tamaño Formulario</value>
+    <comment>Description for DomainProperty &apos;TamañoFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TamañoFormulario.DisplayName" xml:space="preserve">
+    <value>Tamaño Formulario</value>
+    <comment>DisplayName for DomainProperty &apos;TamañoFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/AlineacionFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Alineacion Formulario</value>
+    <comment>Description for DomainProperty &apos;AlineacionFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/AlineacionFormulario.DisplayName" xml:space="preserve">
+    <value>Alineacion Formulario</value>
+    <comment>DisplayName for DomainProperty &apos;AlineacionFormulario&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TipoLetraCampo.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Tipo Letra Campo</value>
+    <comment>Description for DomainProperty &apos;TipoLetraCampo&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TipoLetraCampo.DisplayName" xml:space="preserve">
+    <value>Tipo Letra Campo</value>
+    <comment>DisplayName for DomainProperty &apos;TipoLetraCampo&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/FormatosVisualizacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Formatos Visualizacion</value>
+    <comment>Description for DomainProperty &apos;FormatosVisualizacion&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/FormatosVisualizacion.DisplayName" xml:space="preserve">
+    <value>Formatos Visualizacion</value>
+    <comment>DisplayName for DomainProperty &apos;FormatosVisualizacion&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TipoAtributo.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EstiloFormulario.Tipo Atributo</value>
+    <comment>Description for DomainProperty &apos;TipoAtributo&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EstiloFormulario/TipoAtributo.DisplayName" xml:space="preserve">
+    <value>Tipo Atributo</value>
+    <comment>DisplayName for DomainProperty &apos;TipoAtributo&apos; on DomainClass &apos;EstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacion</value>
+    <comment>Description for DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion.DisplayName" xml:space="preserve">
+    <value>Atributo Relacion</value>
+    <comment>DisplayName for DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion/AdmiteRepetidos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacion.Admite Repetidos</value>
+    <comment>Description for DomainProperty &apos;AdmiteRepetidos&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion/AdmiteRepetidos.DisplayName" xml:space="preserve">
+    <value>Admite Repetidos</value>
+    <comment>DisplayName for DomainProperty &apos;AdmiteRepetidos&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion/AdmiteNoNulos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacion.Admite No Nulos</value>
+    <comment>Description for DomainProperty &apos;AdmiteNoNulos&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacion/AdmiteNoNulos.DisplayName" xml:space="preserve">
+    <value>Admite No Nulos</value>
+    <comment>DisplayName for DomainProperty &apos;AdmiteNoNulos&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad</value>
+    <comment>Description for DomainClass &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad.DisplayName" xml:space="preserve">
+    <value>Tapiz ERTiene Entidad</value>
+    <comment>DisplayName for DomainClass &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/TapizER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/Entidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEntidad/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;TapizERTieneEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo</value>
+    <comment>Description for DomainClass &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo.DisplayName" xml:space="preserve">
+    <value>Tapiz ERTiene Atributo</value>
+    <comment>DisplayName for DomainClass &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/TapizER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/Atributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneAtributo/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;TapizERTieneAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo</value>
+    <comment>Description for DomainClass &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo.DisplayName" xml:space="preserve">
+    <value>Entidad Referencias Atributo</value>
+    <comment>DisplayName for DomainClass &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Entidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Atributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferenciasAtributo/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadReferenciasAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion</value>
+    <comment>Description for DomainClass &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion.DisplayName" xml:space="preserve">
+    <value>Tapiz ERTiene Relacion</value>
+    <comment>DisplayName for DomainClass &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/TapizER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/Relacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneRelacion/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;TapizERTieneRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad</value>
+    <comment>Description for DomainClass &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad.DisplayName" xml:space="preserve">
+    <value>Primera Relacion Referencias Entidad</value>
+    <comment>DisplayName for DomainClass &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Cardinalidad.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad.Cardinalidad</value>
+    <comment>Description for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Cardinalidad.DisplayName" xml:space="preserve">
+    <value>Cardinalidad</value>
+    <comment>DisplayName for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Relacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>PEntidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Entidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.PrimeraRelacionReferenciasEntidad/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>PRelacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;PrimeraRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad</value>
+    <comment>Description for DomainClass &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad.DisplayName" xml:space="preserve">
+    <value>Segunda Relacion Referencias Entidad</value>
+    <comment>DisplayName for DomainClass &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Cardinalidad.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad.Cardinalidad</value>
+    <comment>Description for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Cardinalidad.DisplayName" xml:space="preserve">
+    <value>Cardinalidad</value>
+    <comment>DisplayName for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Relacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Entidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.SegundaRelacionReferenciasEntidad/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;SegundaRelacionReferenciasEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb</value>
+    <comment>Description for DomainClass &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb.DisplayName" xml:space="preserve">
+    <value>Tapiz ERTiene Estilo Portal Web</value>
+    <comment>DisplayName for DomainClass &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/TapizER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Portal Web</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/EstiloPortalWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb.EstiloPortalWeb</value>
+    <comment>Description for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/EstiloPortalWeb.DisplayName" xml:space="preserve">
+    <value>Estilo Portal Web</value>
+    <comment>DisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPortalWeb/EstiloPortalWeb.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb</value>
+    <comment>Description for DomainClass &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Tapiz ERTiene Estilo Pagina Web</value>
+    <comment>DisplayName for DomainClass &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/TapizER.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/EstiloPaginaWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb.EstiloPaginaWeb</value>
+    <comment>Description for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/EstiloPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
+    <comment>DisplayName for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERTieneEstiloPaginaWeb/EstiloPaginaWeb.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;TapizERTieneEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario</value>
+    <comment>Description for DomainClass &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario.DisplayName" xml:space="preserve">
+    <value>Tapiz ERHas Estilo Formulario</value>
+    <comment>DisplayName for DomainClass &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/TapizER.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Formulario</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/EstiloFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario.EstiloFormulario</value>
+    <comment>Description for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/EstiloFormulario.DisplayName" xml:space="preserve">
+    <value>Estilo Formulario</value>
+    <comment>DisplayName for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TapizERHasEstiloFormulario/EstiloFormulario.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;TapizERHasEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion</value>
+    <comment>Description for DomainClass &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion.DisplayName" xml:space="preserve">
+    <value>Atributo Relacion References Relacion</value>
+    <comment>DisplayName for DomainClass &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/AtributoRelacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion.AtributoRelacion</value>
+    <comment>Description for DomainRole &apos;AtributoRelacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/AtributoRelacion.DisplayName" xml:space="preserve">
+    <value>Atributo Relacion</value>
+    <comment>DisplayName for DomainRole &apos;AtributoRelacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/AtributoRelacion.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;AtributoRelacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/Relacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoRelacionReferencesRelacion/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;AtributoRelacionReferencesRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb</value>
+    <comment>Description for DomainClass &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Entidad References Estilo Pagina Web</value>
+    <comment>DisplayName for DomainClass &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/Entidad.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/EstiloPaginaWeb.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb.EstiloPaginaWeb</value>
+    <comment>Description for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/EstiloPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
+    <comment>DisplayName for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.EntidadReferencesEstiloPaginaWeb/EstiloPaginaWeb.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;EntidadReferencesEstiloPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario</value>
+    <comment>Description for DomainClass &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario.DisplayName" xml:space="preserve">
+    <value>Atributo References Estilo Formulario</value>
+    <comment>DisplayName for DomainClass &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/Atributo.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Formulario</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/EstiloFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario.EstiloFormulario</value>
+    <comment>Description for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/EstiloFormulario.DisplayName" xml:space="preserve">
+    <value>Estilo Formulario</value>
+    <comment>DisplayName for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.AtributoReferencesEstiloFormulario/EstiloFormulario.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/AreaTexto.DisplayName" xml:space="preserve">
+    <value>AreaTexto</value>
+    <comment>Display name for EnumerationLiteral &apos;AreaTexto&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/AreaTexto.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion.AreaTexto</value>
+    <comment>Description for EnumerationLiteral &apos;AreaTexto&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/Checkbox.DisplayName" xml:space="preserve">
+    <value>Checkbox</value>
+    <comment>Display name for EnumerationLiteral &apos;Checkbox&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/Checkbox.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion.Checkbox</value>
+    <comment>Description for EnumerationLiteral &apos;Checkbox&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/RadioButton.DisplayName" xml:space="preserve">
+    <value>RadioButton</value>
+    <comment>Display name for EnumerationLiteral &apos;RadioButton&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/RadioButton.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion.RadioButton</value>
+    <comment>Description for EnumerationLiteral &apos;RadioButton&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/ListaDesplegable.DisplayName" xml:space="preserve">
+    <value>ListaDesplegable</value>
+    <comment>Display name for EnumerationLiteral &apos;ListaDesplegable&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion/ListaDesplegable.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.FormatosVisualizacion.ListaDesplegable</value>
+    <comment>Description for EnumerationLiteral &apos;ListaDesplegable&apos; on DomainEnumeration &apos;FormatosVisualizacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Entero.DisplayName" xml:space="preserve">
+    <value>Entero</value>
+    <comment>Display name for EnumerationLiteral &apos;Entero&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Entero.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TipoAtributo.Entero</value>
+    <comment>Description for EnumerationLiteral &apos;Entero&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Real.DisplayName" xml:space="preserve">
+    <value>Real</value>
+    <comment>Display name for EnumerationLiteral &apos;Real&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Real.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TipoAtributo.Real</value>
+    <comment>Description for EnumerationLiteral &apos;Real&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Fecha.DisplayName" xml:space="preserve">
+    <value>Fecha</value>
+    <comment>Display name for EnumerationLiteral &apos;Fecha&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Fecha.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TipoAtributo.Fecha</value>
+    <comment>Description for EnumerationLiteral &apos;Fecha&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Alfanumerico.DisplayName" xml:space="preserve">
+    <value>Alfanumerico</value>
+    <comment>Display name for EnumerationLiteral &apos;Alfanumerico&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.TipoAtributo/Alfanumerico.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.TipoAtributo.Alfanumerico</value>
+    <comment>Description for EnumerationLiteral &apos;Alfanumerico&apos; on DomainEnumeration &apos;TipoAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/CeroUno.DisplayName" xml:space="preserve">
+    <value>CeroUno</value>
+    <comment>Display name for EnumerationLiteral &apos;CeroUno&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/CeroUno.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Cardinalidades.CeroUno</value>
+    <comment>Description for EnumerationLiteral &apos;CeroUno&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/UnoUno.DisplayName" xml:space="preserve">
+    <value>UnoUno</value>
+    <comment>Display name for EnumerationLiteral &apos;UnoUno&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/UnoUno.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Cardinalidades.UnoUno</value>
+    <comment>Description for EnumerationLiteral &apos;UnoUno&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/CeroMuchos.DisplayName" xml:space="preserve">
+    <value>CeroMuchos</value>
+    <comment>Display name for EnumerationLiteral &apos;CeroMuchos&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/CeroMuchos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Cardinalidades.CeroMuchos</value>
+    <comment>Description for EnumerationLiteral &apos;CeroMuchos&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/UnoMuchos.DisplayName" xml:space="preserve">
+    <value>UnoMuchos</value>
+    <comment>Display name for EnumerationLiteral &apos;UnoMuchos&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.Cardinalidades/UnoMuchos.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.Cardinalidades.UnoMuchos</value>
+    <comment>Description for EnumerationLiteral &apos;UnoMuchos&apos; on DomainEnumeration &apos;Cardinalidades&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaEntidad</value>
+    <comment>Description for DomainClass &apos;MetaforaEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaEntidad.DisplayName" xml:space="preserve">
+    <value>Metafora Entidad</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEntidad&apos;</comment>
+  </data>
+  <data name="MetaforaEntidadTextoDefaultText" xml:space="preserve">
+    <value>Texto</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaAtributoNM.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaAtributoNM</value>
+    <comment>Description for DomainClass &apos;MetaforaAtributoNM&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaAtributoNM.DisplayName" xml:space="preserve">
+    <value>Metafora Atributo NM</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaAtributoNM&apos;</comment>
+  </data>
+  <data name="MetaforaAtributoNMTextoDefaultText" xml:space="preserve">
+    <value>Texto</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaClavePrimaria.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaClavePrimaria</value>
+    <comment>Description for DomainClass &apos;MetaforaClavePrimaria&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaClavePrimaria.DisplayName" xml:space="preserve">
+    <value>Metafora Clave Primaria</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaClavePrimaria&apos;</comment>
+  </data>
+  <data name="MetaforaClavePrimariaTextoDefaultText" xml:space="preserve">
+    <value>Texto</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacion.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaRelacion</value>
+    <comment>Description for DomainClass &apos;MetaforaRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacion.DisplayName" xml:space="preserve">
+    <value>Metafora Relacion</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaRelacion&apos;</comment>
+  </data>
+  <data name="MetaforaRelacionTextoDefaultText" xml:space="preserve">
+    <value>Texto</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPortalWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaPortalWeb</value>
+    <comment>Description for DomainClass &apos;MetaforaPortalWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPortalWeb.DisplayName" xml:space="preserve">
+    <value>Metafora Portal Web</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaPortalWeb&apos;</comment>
+  </data>
+  <data name="MetaforaPortalWebEstiloDefaultText" xml:space="preserve">
+    <value>Estilo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPaginaWeb.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaPaginaWeb</value>
+    <comment>Description for DomainClass &apos;MetaforaPaginaWeb&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPaginaWeb.DisplayName" xml:space="preserve">
+    <value>Metafora Pagina Web</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaPaginaWeb&apos;</comment>
+  </data>
+  <data name="MetaforaPaginaWebEstiloDefaultText" xml:space="preserve">
+    <value>Estilo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaFormulario.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.MetaforaFormulario</value>
+    <comment>Description for DomainClass &apos;MetaforaFormulario&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaFormulario.DisplayName" xml:space="preserve">
+    <value>Metafora Formulario</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaFormulario&apos;</comment>
+  </data>
+  <data name="MetaforaFormularioEstiloDefaultText" xml:space="preserve">
+    <value>Estilo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaAtributoRelacion.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.MetaforaAtributoRelacion</value>
+    <comment>Description for DomainClass &apos;MetaforaAtributoRelacion&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaAtributoRelacion.DisplayName" xml:space="preserve">
+    <value>Metafora Atributo Relacion</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaAtributoRelacion&apos;</comment>
+  </data>
+  <data name="MetaforaAtributoRelacionTextoDefaultText" xml:space="preserve">
+    <value>Texto</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaEntidadRefAtributo.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaEntidadRefAtributo</value>
+    <comment>Description for DomainClass &apos;MetaforaEntidadRefAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaEntidadRefAtributo.DisplayName" xml:space="preserve">
+    <value>Metafora Entidad Ref Atributo</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEntidadRefAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPrimeraRelacionEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaPrimeraRelacionEntidad</value>
+    <comment>Description for DomainClass &apos;MetaforaPrimeraRelacionEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaPrimeraRelacionEntidad.DisplayName" xml:space="preserve">
+    <value>Metafora Primera Relacion Entidad</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaPrimeraRelacionEntidad&apos;</comment>
+  </data>
+  <data name="MetaforaPrimeraRelacionEntidadCard1DefaultText" xml:space="preserve">
+    <value>Card1</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaSegundaRelacionEntidad.Description" xml:space="preserve">
+    <value>Descripción de DNF.DCJITRFPFProyectoIPS.MetaforaSegundaRelacionEntidad</value>
+    <comment>Description for DomainClass &apos;MetaforaSegundaRelacionEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaSegundaRelacionEntidad.DisplayName" xml:space="preserve">
+    <value>Metafora Segunda Relacion Entidad</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaSegundaRelacionEntidad&apos;</comment>
+  </data>
+  <data name="MetaforaSegundaRelacionEntidadCardi1DefaultText" xml:space="preserve">
+    <value>Cardi1</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionRefAtributo.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.MetaforaRelacionRefAtributo</value>
+    <comment>Description for DomainClass &apos;MetaforaRelacionRefAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionRefAtributo.DisplayName" xml:space="preserve">
+    <value>Metafora Relacion Ref Atributo</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaRelacionRefAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionPaginaWebEntidad.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.MetaforaRelacionPaginaWebEntidad</value>
+    <comment>Description for DomainClass &apos;MetaforaRelacionPaginaWebEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionPaginaWebEntidad.DisplayName" xml:space="preserve">
+    <value>Metafora Relacion Pagina Web Entidad</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaRelacionPaginaWebEntidad&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionFormularioAtributo.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.MetaforaRelacionFormularioAtributo</value>
+    <comment>Description for DomainClass &apos;MetaforaRelacionFormularioAtributo&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.MetaforaRelacionFormularioAtributo.DisplayName" xml:space="preserve">
+    <value>Metafora Relacion Formulario Atributo</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaRelacionFormularioAtributo&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>DCJITRFPFProyectoIPS (*.DCJITRFPF_DSLProyectoIPS)|*.DCJITRFPF_DSLProyectoIPS</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>DCJITRFPFProyectoIPS Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPSDiagram.Description" xml:space="preserve">
+    <value>Description for DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPSDiagram</value>
+    <comment>Description for DomainClass &apos;DCJITRFPFProyectoIPSDiagram&apos;</comment>
+  </data>
+  <data name="DNF.DCJITRFPFProyectoIPS.DCJITRFPFProyectoIPSDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;DCJITRFPFProyectoIPSDiagram&apos;</comment>
+  </data>
+  <data name="DCJITRFPFProyectoIPS1ToolboxTab" xml:space="preserve">
+    <value>DCJITRFPFProyectoIPS1</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="EntidadToolToolboxItem" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntidadToolToolboxTooltip" xml:space="preserve">
+    <value>Crea una Entidad</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoNMToolToolboxItem" xml:space="preserve">
+    <value>AtributoNM</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoNMToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un atributo normal y corriente</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EntidadAtributoConexToolboxItem" xml:space="preserve">
+    <value>EntidadXAtributo</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntidadAtributoConexToolboxTooltip" xml:space="preserve">
+    <value>Conecta una Entidad con un Atributo</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ClavePrimariaToolToolboxItem" xml:space="preserve">
+    <value>ClavePrimaria</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ClavePrimariaToolToolboxTooltip" xml:space="preserve">
+    <value>Crea la clave primaria de una entidad</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelacionToolToolboxItem" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un objeto relacion para nombrar la relacion de dos entidades</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PrimeraRelacionToolToolboxItem" xml:space="preserve">
+    <value>PrimeraRelacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PrimeraRelacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea la primera relacion con el nombre de la relacion para unir entidaes</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SegundaRelacionToolToolboxItem" xml:space="preserve">
+    <value>SegundaRelacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SegundaRelacionToolToolboxTooltip" xml:space="preserve">
+    <value>Crea la segunda relacion para la union de entidades</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PortalWebToolToolboxItem" xml:space="preserve">
+    <value>PortalWeb</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PortalWebToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un cuadro de Estilo Grafico Portal Web</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PaginaWebToolToolboxItem" xml:space="preserve">
+    <value>PaginaWeb</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PaginaWebToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un cuadro de estilo de pagina web</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="FormularioToolToolboxItem" xml:space="preserve">
+    <value>Formulario</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="FormularioToolToolboxTooltip" xml:space="preserve">
+    <value>Crea un cuadro de estilo formulario</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelacionAtributoConexToolboxItem" xml:space="preserve">
+    <value>RelacionAtributo</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelacionAtributoConexToolboxTooltip" xml:space="preserve">
+    <value>Relaciona un atributo de relacion con su relacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoRelacionToolboxItem" xml:space="preserve">
+    <value>AtributoRelacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoRelacionToolboxTooltip" xml:space="preserve">
+    <value>Añade un atributo a una relacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="PagWebRefEntidadToolboxItem" xml:space="preserve">
+    <value>PagWebRefEntidad</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="PagWebRefEntidadToolboxTooltip" xml:space="preserve">
+    <value>Crea una relacion entre el cuadro de estilo pag web y la entidad a la que referencia</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoRefFormularioToolboxItem" xml:space="preserve">
+    <value>AtributoRefFormulario</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoRefFormularioToolboxTooltip" xml:space="preserve">
+    <value>Une un cuadro de estilo formulario con un atributo</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="EntidadToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoNMToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntidadAtributoConexToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntidadAtributoConexSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="EntidadAtributoConexTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="ClavePrimariaToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PrimeraRelacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PrimeraRelacionToolSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="PrimeraRelacionToolTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="SegundaRelacionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SegundaRelacionToolSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="SegundaRelacionToolTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="PortalWebToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PaginaWebToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="FormularioToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelacionAtributoConexToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelacionAtributoConexSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="RelacionAtributoConexTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="AtributoRelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PagWebRefEntidadToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="PagWebRefEntidadSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="PagWebRefEntidadTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="AtributoRefFormularioToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoRefFormularioSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="AtributoRefFormularioTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+</root>
+
+

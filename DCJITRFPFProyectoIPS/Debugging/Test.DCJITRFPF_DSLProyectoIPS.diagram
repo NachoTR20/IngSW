@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dCJITRFPFProyectoIPSDiagram dslVersion="1.0.0.0" Id="6af26df6-0ad3-4559-8901-c6c64988c572" absoluteBounds="0, 0, 11, 8.5" name="Test">
+  <exampleModelMoniker Id="27d78de6-dba5-4c8d-8ca5-9e18e1d92d3b" />
+  <nestedChildShapes>
+    <metaforaEntidad Id="72a746eb-786e-4363-badd-3ddec7cdf0e3" absoluteBounds="4.375, 0.5, 1.5, 1">
+      <Entidad Id="fe2c70d1-e5b7-4560-875c-e526ea83156d" />
+    </metaforaEntidad>
+    <metaforaEntidad Id="0c2da3e1-b6af-473c-9c1d-3979cd9bee1a" absoluteBounds="0.75, 2.375, 1.5, 1">
+      <Entidad Id="9e9a6e99-fa0a-4510-9d58-2c43f09f3f80" />
+    </metaforaEntidad>
+    <metaforaEntidad Id="dbe7c48a-c73d-4af4-9f08-db2a97ea87ab" absoluteBounds="5.75, 1.875, 1.5, 1">
+      <Entidad Id="4a9c1a94-2078-4203-bc7c-d53a686f2400" />
+    </metaforaEntidad>
+    <metaforaRelacion Id="59aee882-85ba-4e04-b17e-1540ac85ac76" absoluteBounds="6.625, 0.5, 1, 1">
+      <Relacion Id="0a7c793f-dd00-4d3b-8245-b0556ab04bae" />
+    </metaforaRelacion>
+    <metaforaSegundaRelacionEntidad Id="2c4e9b0d-1471-495a-8e6e-266b2f57dccc" edgePoints="[(6.9375 : 1.5); (6.9375 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <SegundaRelacionReferenciasEntidad Id="aa6761a3-6bce-481d-8be1-0657fcaf3470" />
+      <relativeChildShapes />
+      <nodes>
+        <MetaforaRelacion Id="59aee882-85ba-4e04-b17e-1540ac85ac76" />
+        <MetaforaEntidad Id="dbe7c48a-c73d-4af4-9f08-db2a97ea87ab" />
+      </nodes>
+    </metaforaSegundaRelacionEntidad>
+    <metaforaRelacion Id="12fc31dd-039e-4751-9a00-1649b1717d48" absoluteBounds="2.25, 0.5, 1, 1">
+      <Relacion Id="a52fcb36-ea8a-401d-b7ae-a6d74c9efddf" />
+    </metaforaRelacion>
+    <metaforaPrimeraRelacionEntidad Id="df0a3baf-3971-4105-a241-54409b2d63ab" edgePoints="[(2.65625 : 1.5); (2.65625 : 2.5937475); (2.25 : 2.5937475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <PrimeraRelacionReferenciasEntidad Id="412aaeae-5244-4959-97ab-db1902b288ef" />
+      <relativeChildShapes />
+      <nodes>
+        <MetaforaRelacion Id="12fc31dd-039e-4751-9a00-1649b1717d48" />
+        <MetaforaEntidad Id="0c2da3e1-b6af-473c-9c1d-3979cd9bee1a" />
+      </nodes>
+    </metaforaPrimeraRelacionEntidad>
+    <metaforaSegundaRelacionEntidad Id="43a729b8-9784-4bac-b587-652bae8e1c22" edgePoints="[(3.25 : 1); (4.375 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <SegundaRelacionReferenciasEntidad Id="30969b73-e043-4f2f-bb94-7412324bb209" />
+      <relativeChildShapes />
+      <nodes>
+        <MetaforaRelacion Id="12fc31dd-039e-4751-9a00-1649b1717d48" />
+        <MetaforaEntidad Id="72a746eb-786e-4363-badd-3ddec7cdf0e3" />
+      </nodes>
+    </metaforaSegundaRelacionEntidad>
+    <metaforaPrimeraRelacionEntidad Id="7c29c1ba-ec06-444e-ac0d-0751e51f6a19" edgePoints="[(6.625 : 1); (5.875 : 1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <PrimeraRelacionReferenciasEntidad Id="9eaef124-31f8-4087-91e7-27c853353bf5" />
+      <relativeChildShapes />
+      <nodes>
+        <MetaforaRelacion Id="59aee882-85ba-4e04-b17e-1540ac85ac76" />
+        <MetaforaEntidad Id="72a746eb-786e-4363-badd-3ddec7cdf0e3" />
+      </nodes>
+    </metaforaPrimeraRelacionEntidad>
+    <metaforaClavePrimaria Id="9da5273c-da16-4ec9-b920-47c5f406cbe5" absoluteBounds="6.875, 3.5, 0.75, 0.5">
+      <ClavePrimaria Id="cd18ed32-70bc-45d3-b75e-61c089f96121" />
+    </metaforaClavePrimaria>
+    <metaforaEntidadRefAtributo Id="9f001abd-5d98-4225-92dd-46ba582b6616" edgePoints="[(7.0625 : 2.875); (7.0625 : 3.53349364905389)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <EntidadReferenciasAtributo Id="8d3eff29-8074-4a6d-9a18-50394f126a49" />
+      <nodes>
+        <MetaforaEntidad Id="dbe7c48a-c73d-4af4-9f08-db2a97ea87ab" />
+        <GeometryShape1 Id="9da5273c-da16-4ec9-b920-47c5f406cbe5" />
+      </nodes>
+    </metaforaEntidadRefAtributo>
+    <metaforaClavePrimaria Id="521c28cf-187f-4286-9419-1e1ec10fdad2" absoluteBounds="1, 4, 0.75, 0.5">
+      <ClavePrimaria Id="dfc3d541-8634-4d2e-b0aa-9c652482a9fc" />
+    </metaforaClavePrimaria>
+    <metaforaEntidadRefAtributo Id="7804a74d-bf2e-4405-9a15-6d7c4e8a958a" edgePoints="[(1.375 : 3.375); (1.375 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <EntidadReferenciasAtributo Id="5bbf66b0-25c5-406d-9474-cc5a424e587d" />
+      <nodes>
+        <MetaforaEntidad Id="0c2da3e1-b6af-473c-9c1d-3979cd9bee1a" />
+        <GeometryShape1 Id="521c28cf-187f-4286-9419-1e1ec10fdad2" />
+      </nodes>
+    </metaforaEntidadRefAtributo>
+    <metaforaAtributoNM Id="6aa94bc0-d108-4adb-9cd0-9cceccda7cbe" absoluteBounds="2.625, 4, 0.75, 0.5">
+      <AtributoNM Id="abdc126b-744a-4404-ade5-75774d98babe" />
+    </metaforaAtributoNM>
+    <metaforaEntidadRefAtributo Id="8b78dee5-b0c4-4be7-b6c6-8dc35e75f581" edgePoints="[(2.25 : 2.875); (3 : 2.875); (3 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <EntidadReferenciasAtributo Id="dc7ac4dc-4d67-487c-8032-598d4541243a" />
+      <nodes>
+        <MetaforaEntidad Id="0c2da3e1-b6af-473c-9c1d-3979cd9bee1a" />
+        <MetaforaAtributoNM Id="6aa94bc0-d108-4adb-9cd0-9cceccda7cbe" />
+      </nodes>
+    </metaforaEntidadRefAtributo>
+    <metaforaClavePrimaria Id="eed2e363-703d-4b56-bb46-eac0f7575a7e" absoluteBounds="3.625, 2, 0.75, 0.5">
+      <ClavePrimaria Id="6ae7794c-43e9-49c1-9530-5f3e851272bd" />
+    </metaforaClavePrimaria>
+    <metaforaEntidadRefAtributo Id="96c95bb3-004d-4c9e-9182-4b081f0925dc" edgePoints="[(4.375 : 1.2812525); (3.96875 : 1.2812525); (3.96875 : 2.00086956785205)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <EntidadReferenciasAtributo Id="e2a1790e-686b-4e6e-898c-5af515d9f565" />
+      <nodes>
+        <MetaforaEntidad Id="72a746eb-786e-4363-badd-3ddec7cdf0e3" />
+        <GeometryShape1 Id="eed2e363-703d-4b56-bb46-eac0f7575a7e" />
+      </nodes>
+    </metaforaEntidadRefAtributo>
+    <metaforaAtributoRelacion Id="d5ff0b20-e8ee-4804-929e-078ed613b1b3" absoluteBounds="0.5, 0.625, 0.75, 0.5">
+      <atributoRelacionMoniker Id="09e54fee-d670-4da9-a643-2f0ea06dad17" />
+    </metaforaAtributoRelacion>
+    <metaforaRelacionRefAtributo Id="c6700236-54eb-4f03-b5f6-8633a94fad1a" edgePoints="[(1.25 : 0.875); (2.25 : 0.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <atributoRelacionReferencesRelacionMoniker Id="eb985458-4f2b-4bc2-bf02-b0758c826900" />
+      <nodes>
+        <metaforaAtributoRelacionMoniker Id="d5ff0b20-e8ee-4804-929e-078ed613b1b3" />
+        <MetaforaRelacion Id="12fc31dd-039e-4751-9a00-1649b1717d48" />
+      </nodes>
+    </metaforaRelacionRefAtributo>
+  </nestedChildShapes>
+</dCJITRFPFProyectoIPSDiagram>

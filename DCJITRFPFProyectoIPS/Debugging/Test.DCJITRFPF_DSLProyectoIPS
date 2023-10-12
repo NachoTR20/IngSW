@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tapizER xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="27d78de6-dba5-4c8d-8ca5-9e18e1d92d3b" solucionER="dcjitrfpfproyectoips" xmlns="http://schemas.microsoft.com/dsltools/DCJITRFPFProyectoIPS">
+  <entidad>
+    <tapizERTieneEntidad Id="83589b99-3800-44c1-b98d-f01718a69b8c">
+      <entidad Id="fe2c70d1-e5b7-4560-875c-e526ea83156d" nombre="Pelicula">
+        <atributo>
+          <entidadReferenciasAtributo Id="e2a1790e-686b-4e6e-898c-5af515d9f565">
+            <ClavePrimaria Id="6ae7794c-43e9-49c1-9530-5f3e851272bd" />
+          </entidadReferenciasAtributo>
+        </atributo>
+      </entidad>
+    </tapizERTieneEntidad>
+    <tapizERTieneEntidad Id="779e29bf-d177-4b72-8e51-41ae760a43d6">
+      <entidad Id="9e9a6e99-fa0a-4510-9d58-2c43f09f3f80" nombre="Cine">
+        <atributo>
+          <entidadReferenciasAtributo Id="5bbf66b0-25c5-406d-9474-cc5a424e587d">
+            <ClavePrimaria Id="dfc3d541-8634-4d2e-b0aa-9c652482a9fc" />
+          </entidadReferenciasAtributo>
+          <entidadReferenciasAtributo Id="dc7ac4dc-4d67-487c-8032-598d4541243a">
+            <AtributoNM Id="abdc126b-744a-4404-ade5-75774d98babe" />
+          </entidadReferenciasAtributo>
+        </atributo>
+      </entidad>
+    </tapizERTieneEntidad>
+    <tapizERTieneEntidad Id="fdb81896-8b84-4532-a12f-c98f5d9deb04">
+      <entidad Id="4a9c1a94-2078-4203-bc7c-d53a686f2400" nombre="Cliente">
+        <atributo>
+          <entidadReferenciasAtributo Id="8d3eff29-8074-4a6d-9a18-50394f126a49">
+            <ClavePrimaria Id="cd18ed32-70bc-45d3-b75e-61c089f96121" />
+          </entidadReferenciasAtributo>
+        </atributo>
+      </entidad>
+    </tapizERTieneEntidad>
+  </entidad>
+  <atributo>
+    <tapizERTieneAtributo Id="75c8e9a3-6d28-4aae-824b-3c18b757bbc1">
+      <clavePrimaria Id="cd18ed32-70bc-45d3-b75e-61c089f96121" nombre="ID" tipoDato="Entero" longitud="0" />
+    </tapizERTieneAtributo>
+    <tapizERTieneAtributo Id="4a4ca6ff-9dd9-4ac4-a323-30fd12aa770b">
+      <clavePrimaria Id="dfc3d541-8634-4d2e-b0aa-9c652482a9fc" nombre="ID" tipoDato="Entero" longitud="0" />
+    </tapizERTieneAtributo>
+    <tapizERTieneAtributo Id="f8082fd5-c6a9-4cd1-b450-c5be0832cbf9">
+      <atributoNM Id="abdc126b-744a-4404-ade5-75774d98babe" nombre="Capacidad" tipoDato="Entero" longitud="0" admiteRepetidos="true" admiteNoNulos="false" />
+    </tapizERTieneAtributo>
+    <tapizERTieneAtributo Id="75b69e34-ea5d-4d7e-bf48-020ae13e9323">
+      <clavePrimaria Id="6ae7794c-43e9-49c1-9530-5f3e851272bd" nombre="Nombre" tipoDato="Alfanumerico" longitud="30" />
+    </tapizERTieneAtributo>
+    <tapizERTieneAtributo Id="37b826b8-dc1b-46d5-8d33-9ebfaaf7d134">
+      <atributoRelacion Id="09e54fee-d670-4da9-a643-2f0ea06dad17" nombre="Sala" tipoDato="Entero" longitud="0" admiteRepetidos="false" admiteNoNulos="false">
+        <relacion>
+          <atributoRelacionReferencesRelacion Id="eb985458-4f2b-4bc2-bf02-b0758c826900">
+            <Relacion Id="a52fcb36-ea8a-401d-b7ae-a6d74c9efddf" />
+          </atributoRelacionReferencesRelacion>
+        </relacion>
+      </atributoRelacion>
+    </tapizERTieneAtributo>
+  </atributo>
+  <relacion>
+    <tapizERTieneRelacion Id="5074384a-280e-4feb-aa01-23cface74ec5">
+      <relacion Id="0a7c793f-dd00-4d3b-8245-b0556ab04bae" nombre="Ve">
+        <pEntidad>
+          <primeraRelacionReferenciasEntidad Id="9eaef124-31f8-4087-91e7-27c853353bf5" cardinalidad="CeroMuchos">
+            <Entidad Id="fe2c70d1-e5b7-4560-875c-e526ea83156d" />
+          </primeraRelacionReferenciasEntidad>
+        </pEntidad>
+        <entidad>
+          <segundaRelacionReferenciasEntidad Id="aa6761a3-6bce-481d-8be1-0657fcaf3470" cardinalidad="UnoMuchos">
+            <Entidad Id="4a9c1a94-2078-4203-bc7c-d53a686f2400" />
+          </segundaRelacionReferenciasEntidad>
+        </entidad>
+      </relacion>
+    </tapizERTieneRelacion>
+    <tapizERTieneRelacion Id="ae8a2b95-396f-4994-afc0-8e998cddec29">
+      <relacion Id="a52fcb36-ea8a-401d-b7ae-a6d74c9efddf" nombre="Esta">
+        <pEntidad>
+          <primeraRelacionReferenciasEntidad Id="412aaeae-5244-4959-97ab-db1902b288ef" cardinalidad="CeroMuchos">
+            <Entidad Id="9e9a6e99-fa0a-4510-9d58-2c43f09f3f80" />
+          </primeraRelacionReferenciasEntidad>
+        </pEntidad>
+        <entidad>
+          <segundaRelacionReferenciasEntidad Id="30969b73-e043-4f2f-bb94-7412324bb209" cardinalidad="CeroMuchos">
+            <Entidad Id="fe2c70d1-e5b7-4560-875c-e526ea83156d" />
+          </segundaRelacionReferenciasEntidad>
+        </entidad>
+      </relacion>
+    </tapizERTieneRelacion>
+  </relacion>
+</tapizER>

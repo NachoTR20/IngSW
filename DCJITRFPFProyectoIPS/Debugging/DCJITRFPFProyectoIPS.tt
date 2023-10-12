@@ -1,0 +1,252 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+<#@ output extension=".sql" #>
+<#@ DCJITRFPFProyectoIPS processor="DCJITRFPFProyectoIPSDirectiveProcessor"
+requires="fileName='Test.DCJITRFPF_DSLProyectoIPS'" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+<#
+	foreach ( Entidad e in this.TapizER.Entidad)
+	{
+
+		WriteLine("CREATE TABLE IF NOT EXISTS " +  e.Nombre + "(");
+		mostrarAtributos(e);
+		WriteLine("\n);");
+		Write("\n");
+	}//endforeach entidades
+
+	foreach (Relacion r in this.TapizER.Relacion)
+	{
+		if(comprobarMuchosAMuchos(r))
+		{
+			CrearTablaRelacion(r);
+		}
+	}
+#>
+
+<#+
+	private void CrearTablaRelacion(Relacion r)
+	{
+		Entidad e1= PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(r).Entidad; 
+		Entidad e2= SegundaRelacionReferenciasEntidad.GetLinkToEntidad(r).Entidad;
+
+		WriteLine("CREATE TABLE IF NOT EXISTS " + e1.Nombre + r.nombre + e2.Nombre + "(");
+		WriteLine(crearAtributo(GetClavePrimaria(e1))+",");
+		WriteLine(crearAtributo(GetClavePrimaria(e2))+",");
+
+		foreach(AtributoRelacion att in r.AtributoRelacion)
+		{
+			WriteLine(EscribirAtributoNM(att) + ",");
+		}
+
+		WriteLine("FOREIGN KEY ("+ GetClavePrimaria(e1).Nombre + ") REFERENCES " + e1.Nombre + "(" + GetClavePrimaria(e1).Nombre +"),");
+		WriteLine("FOREIGN KEY ("+ GetClavePrimaria(e2).Nombre + ") REFERENCES " + e2.Nombre + "(" + GetClavePrimaria(e2).Nombre +")\n);\n");
+	}
+#>
+
+<#+
+	private string EscribirAtributoNM(AtributoRelacion nm) 
+	{
+		string sql = nm.Nombre;
+		sql += " " + ConvertirTipoDato((int)nm.tipoDato);
+
+		if(((int)nm.tipoDato) is 2)
+		{
+			sql += "(" + nm.longitud + ")";
+		}
+
+		if(!nm.AdmiteRepetidos)
+		{	
+			sql += " UNIQUE";
+		}
+
+		if(!nm.AdmiteNoNulos)
+		{
+			sql += " NOT NULL";
+		}
+
+		return sql;
+	}
+#>
+
+<#+
+	private Atributo GetClavePrimaria(Entidad entidad)
+	{
+		Atributo att=null;
+		foreach(Atributo a in entidad.Atributo)
+		{
+			if( a is ClavePrimaria)
+			{
+				att=a;
+			}
+		}
+		return att;
+	}
+#>
+
+<#+
+	private void EscribirClavePrimaria(Entidad paramEntidad)
+	{
+		foreach(Atributo ent in paramEntidad.Atributo)
+		{
+			if (ent is ClavePrimaria)
+			{	
+				Write(",\nPRIMARY KEY (" + ent.Nombre +")");
+			}
+		}
+	}
+#>
+
+<#+
+	private void mostrarAtributos(Entidad paramEntidad)
+	{
+		foreach(Atributo ent in paramEntidad.Atributo)
+		{	
+			if(ent is ClavePrimaria)
+			{
+				Write(crearAtributo(ent));
+			}
+			else
+			{
+				Write(",\n");
+				Write(crearAtributo(ent));
+			}
+		}
+		
+		EscribirClavePrimaria(paramEntidad);
+	}
+#>
+
+<#+
+	private string crearAtributo(Atributo paramAtributo)
+	{
+		string sql = paramAtributo.Nombre;
+		sql += " " + ConvertirTipoDato((int)paramAtributo.tipoDato);
+
+		if(((int)paramAtributo.tipoDato) is 2)
+		{
+			sql += "(" + paramAtributo.longitud + ")";
+		}
+
+		if(paramAtributo is AtributoNM)
+		{
+			var atrib = (AtributoNM)paramAtributo;
+
+			if(!atrib.AdmiteRepetidos)
+			{	
+				sql += " UNIQUE";
+			}
+
+			if(!atrib.AdmiteNoNulos)
+			{
+				sql += " NOT NULL";
+			}
+		}
+
+		if(paramAtributo is AtributoRelacion)
+		{
+			var atrib = (AtributoRelacion)paramAtributo;
+
+			if(!atrib.AdmiteRepetidos)
+			{	
+				sql += " UNIQUE";
+			}
+			
+			if(!atrib.AdmiteNoNulos)
+			{
+				sql += " NOT NULL";
+			}
+		}
+		return sql;
+	}
+#>
+
+<#+
+	private string ConvertirTipoDato(int valorTipoDato) {
+		var hashMap = new Dictionary<int,string>{
+			{0, "INTEGER"},
+			{1, "NUMERIC(9,2)"},
+			{2, "VARCHAR"},
+			{3, "DATETIME"},
+		};
+		return hashMap[valorTipoDato];
+	}
+#>
+
+<#+
+	private string ConvertirCardinalidad(int Cardinalidad) {
+		var hashMap = new Dictionary<int,string>{
+			{0, "0..1"},
+			{1, "1..1"},
+			{2, "0..*"},
+			{3, "1..*"},
+		};
+		return hashMap[Cardinalidad];
+	}
+#>
+
+<#+
+	private Boolean comprobarMuchosAMuchos(Relacion rel)
+	{
+		Boolean Lado1=false;
+		Boolean Lado2=false;
+
+		var pr = PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(rel);
+		var sr = SegundaRelacionReferenciasEntidad.GetLinkToEntidad(rel);
+
+		if((ConvertirCardinalidad((int)pr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)pr.Cardinalidad)=="1..*"))
+		{
+			Lado1=true;
+		}
+
+		if((ConvertirCardinalidad((int)sr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)sr.Cardinalidad)=="1..*"))
+		{
+			Lado2=true;
+		}
+
+		if((Lado1==true) && (Lado2==true))
+		{
+			return true;
+		}
+		else return false;
+	}
+#>
+
+<#+
+	private Boolean comprobarPrimerUnoAMuchos(Relacion rel)
+	{
+		Boolean resultado = false;
+
+		var pr = PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(rel);
+		var sr = SegundaRelacionReferenciasEntidad.GetLinkToEntidad(rel);
+
+		if((ConvertirCardinalidad((int)pr.Cardinalidad)=="0..1") || (ConvertirCardinalidad((int)pr.Cardinalidad)=="1..1"))
+		{
+			if((ConvertirCardinalidad((int)sr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)sr.Cardinalidad)=="1..*"))
+			{
+				resultado = true;
+			}
+		}
+
+		return resultado;
+	}
+#>
+
+<#+
+	private Boolean comprobarSegundoUnoAMuchos(Relacion rel)
+	{
+		Boolean resultado = false;
+
+		var pr = PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(rel);
+		var sr = SegundaRelacionReferenciasEntidad.GetLinkToEntidad(rel);
+
+		if((ConvertirCardinalidad((int)sr.Cardinalidad)=="0..1") || (ConvertirCardinalidad((int)sr.Cardinalidad)=="1..1"))
+		{
+			if((ConvertirCardinalidad((int)pr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)pr.Cardinalidad)=="1..*"))
+			{
+				resultado = true;
+			}
+		}
+
+		return resultado;
+	}
+#>

@@ -1,0 +1,192 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" language="C#" hostspecific="True"#>
+<#@ output extension=".txt" #>
+<#@ DCJITRFPFProyectoIPS processor="DCJITRFPFProyectoIPSDirectiveProcessor" requires="fileName='Test.DCJITRFPF_DSLProyectoIPS'" #>
+<#@ include file="EF.utility.CS.ttinclude" #>
+
+<#
+	var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+	
+	foreach(Entidad e in this.TapizER.Entidad)
+	{
+		fileManager.StartNewFile(e.Nombre + ".php");
+
+		WriteLine("<html>");
+
+		WriteLine("<head>");
+		WriteLine("<title>" + e.Nombre + "</title>");
+		WriteLine("</head>");
+
+		WriteLine("<body>");
+		WriteLine("<?php");
+		WriteLine("if (!(isset($_GET['var" +  GetClavePrimaria(e).Nombre + "']))){");
+		WriteLine("?>");
+
+		WriteLine("<form>");
+		WriteLine("<h1>" + e.Nombre + "</h1>");
+
+		foreach(Atributo a in e.Atributo)
+		{
+			WriteLine(a.Nombre + ": <input name=\"var" + a.Nombre + "\" type=\"text\" value=\"\" >");
+		}
+
+		WriteLine("<input type=\"submit\" value=\"Alta\" />");
+		WriteLine("</form>");
+
+		WriteLine("<?php");
+		WriteLine("}");
+		WriteLine("else {");
+		WriteLine("$conex = mysqli_connect(\"localhost\",\"root\") or die(\"ERROR...\");");
+		WriteLine("mysqli_select_db($conex,\"" + this.TapizER.solucionER + "\") or die(\"ERROR CON LA BASE DE DATOS\");");
+
+		foreach(Atributo a in e.Atributo)
+		{
+			WriteLine("$" + a.Nombre + " = $_GET['var" + a.Nombre + "'];");
+		}
+
+		Write("$resultado = mysqli_query($conex,\"INSERT INTO " + e.Nombre + " VALUES(");
+		foreach(Atributo a in e.Atributo)
+		{
+			if (a is ClavePrimaria)
+			{
+				Write("'$" + a.Nombre + "'");
+			}
+			else
+			{
+				Write(",'$" + a.Nombre + "'");
+			}
+		}
+		WriteLine(")\");");
+
+		WriteLine("if ($resultado)");
+		WriteLine(" echo\" <b>Datos Insertados</b> \";");
+		WriteLine("else");
+		WriteLine(" echo\"Error en la insercion\";");
+
+		WriteLine("mysqli_close($conex);");
+		WriteLine("}");
+		WriteLine("?>");
+
+		WriteLine("</body>");
+		WriteLine("</html>");
+
+	}
+	
+	foreach(Relacion r in this.TapizER.Relacion)
+	{
+		if(comprobarMuchosAMuchos(r))
+		{
+			Entidad e1= PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(r).Entidad; 
+			Entidad e2= SegundaRelacionReferenciasEntidad.GetLinkToEntidad(r).Entidad;
+
+			fileManager.StartNewFile(e1.Nombre + r.nombre + e2.Nombre + ".php");
+
+			WriteLine("<html>");
+			WriteLine("<head>");
+			WriteLine("<title>" + e1.Nombre + r.nombre + e2.Nombre + "</title>");
+			WriteLine("</head>");
+
+			WriteLine("<body>");
+			WriteLine("<?php");
+			WriteLine("if (!(isset($_GET['var" + GetClavePrimaria(e1).Nombre + "']))){");
+			WriteLine("if (!(isset($_GET['var" + GetClavePrimaria(e2).Nombre + "']))){");
+			WriteLine("?>");
+			
+			WriteLine("<form>");
+			WriteLine("<h1>" + e1.Nombre + r.nombre + e2.Nombre + "</h1>");
+			WriteLine(GetClavePrimaria(e1).Nombre + ": <input name=\"var" + GetClavePrimaria(e1).Nombre + "\" type=\"text\" value=\"\" >");
+			WriteLine(GetClavePrimaria(e2).Nombre + ": <input name=\"var" + GetClavePrimaria(e2).Nombre + "\" type=\"text\" value=\"\" >");
+			foreach(AtributoRelacion a in r.AtributoRelacion)
+			{
+				WriteLine(a.Nombre + ": <input name=\"var" + a.Nombre + "\" type=\"text\" value=\"\" >");
+			}
+			WriteLine("<input type=\"submit\" value=\"Alta\" />");
+			WriteLine("</form>");
+
+			WriteLine("<?php");
+			WriteLine("}}");
+			WriteLine("else {");
+			WriteLine("$conex = mysqli_connect(\"localhost\",\"root\") or die(\"ERROR...\");");
+			WriteLine("mysqli_select_db($conex,\"" + this.TapizER.solucionER + "\") or die(\"ERROR CON LA BASE DE DATOS\");");
+
+			WriteLine("$" + GetClavePrimaria(e1).Nombre + " = $_GET['var" + GetClavePrimaria(e1).Nombre + "'];");
+			WriteLine("$" + GetClavePrimaria(e2).Nombre + " = $_GET['var" + GetClavePrimaria(e2).Nombre + "'];");
+			foreach(AtributoRelacion a in r.AtributoRelacion)
+			{
+				WriteLine("$" + a.Nombre + " = $_GET['var" + a.Nombre + "'];");
+			}
+
+			Write("$resultado = mysqli_query($conex,\"INSERT INTO " + e1.Nombre + r.nombre + e2.Nombre + " VALUES('$" + GetClavePrimaria(e1).Nombre + "','$" + GetClavePrimaria(e2).Nombre + "'");
+			foreach(AtributoRelacion a in r.AtributoRelacion)
+			{
+				Write(", '$" + a.Nombre + "'");
+			}
+			WriteLine(")\");");
+
+			WriteLine("if ($resultado)");
+			WriteLine(" echo\" <b>Datos Insertados</b> \";");
+			WriteLine("else");
+			WriteLine(" echo\"Error en la inserción\";");
+			WriteLine("mysqli_close($conex);");
+			WriteLine("}");
+			WriteLine("?>");
+			WriteLine("</body>");
+			WriteLine("</html>");
+		}
+	}
+	
+	fileManager.Process();
+#>
+
+<#+
+	private Atributo GetClavePrimaria(Entidad entidad)
+	{
+		Atributo att=null;
+		foreach(Atributo a in entidad.Atributo)
+		{
+			if( a is ClavePrimaria)
+			{
+				att=a;
+			}
+		}
+		return att;
+	}
+#>
+
+<#+
+	private Boolean comprobarMuchosAMuchos(Relacion rel)
+	{
+		Boolean Lado1=false;
+		Boolean Lado2=false;
+
+		var pr = PrimeraRelacionReferenciasEntidad.GetLinkToPEntidad(rel);
+		var sr = SegundaRelacionReferenciasEntidad.GetLinkToEntidad(rel);
+
+		if((ConvertirCardinalidad((int)pr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)pr.Cardinalidad)=="1..*"))
+		{
+			Lado1=true;
+		}
+
+		if((ConvertirCardinalidad((int)sr.Cardinalidad)=="0..*") || (ConvertirCardinalidad((int)sr.Cardinalidad)=="1..*"))
+		{
+			Lado2=true;
+		}
+
+		if((Lado1==true) && (Lado2==true))
+		{
+			return true;
+		}
+		else return false;
+	}
+#>
+
+<#+
+	private string ConvertirCardinalidad(int Cardinalidad) {
+		var hashMap = new Dictionary<int,string>{
+			{0, "0..1"},
+			{1, "1..1"},
+			{2, "0..*"},
+			{3, "1..*"},
+		};
+		return hashMap[Cardinalidad];
+	}
+#>
